@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amy Barnhill UX/UI Designer</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f91976b93a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo">Amy Barnhill</a>
+          <nav>
+            <ul class="nav">
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#contact" class="button" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="hero">
+        <div class="container">
+          <h1>
+            Hello there! I'm Amy &#128075;
+            <span>A UX Designer based in Groton, Connecticut</span>
+          </h1>
+          <h4>
+            I enjoy using design thinking to uncover new opportunities for
+            organizations and delightful solutions for humans.
+          </h4>
+        </div>
+      </div>
+      <div id="work">
+        <div class="container">
+          <h2>My Work</h2>
+          <div class="row">
+            <!--open 1st row that holds 2 columns-->
+            <div class="column col-md-6 col-lg-7">
+              <!--open first column for image-->
+              <picture
+                ><source
+                  srcset="img/1x_sm/vela_mockup_sm.jpg"
+                  media="(max-width:767px)" />
+                <img src="img/1x_lrg/vela_mockup_lrg.jpg" alt="Vela Mockup"
+              /></picture>
+            </div>
+            <!--close first column-->
+            <div class="column col-md-6 col-lg-5">
+              <!--open second column for text-->
+              <h3>Vela</h3>
+              <p>A mobile weather app built for watersport enthusiasts</p>
+              <a href="vela.html" class="button">View Project</a>
+            </div>
+            <!--close second column-->
+          </div>
+          <!--close row with 2 columns-->
+          <div class="row">
+            <!--open 2nd row that holds 2 columns-->
+            <div class="column col-md-6 col-lg-7">
+              <!--open first column 2nd row for image-->
+              <picture
+                ><source
+                  srcset="img/1x_sm/truecoach_mockup_sm.jpg"
+                  media="(max-width:767px)" />
+                <img
+                  src="img/1x_lrg/truecoach_mockup_lrg.jpg"
+                  alt="Truecoach Mockup"
+              /></picture>
+            </div>
+            <!--close first column 2nd row-->
+            <div class="column col-md-6 col-lg-5">
+              <!--open second column 2nd row for text-->
+              <h3>TrueCoach Redesign</h3>
+              <p>
+                Mobile app redesign concept for fitness trainers and their
+                clients
+              </p>
+              <a href="truecoach.html" class="button">View Project</a>
+            </div>
+            <!--close second column 2nd row-->
+          </div>
+          <!--close 2nd row with 2 columns-->
+        </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>
+          If you like my work and would like to chat, please feel free to reach
+          out anytime
+        </p>
+        <div>
+          <a href="mailto:itsamybarnhill@gmail.com" class="button contact"
+            >Email Me</a
+          >
+        </div>
+        <div class="social-logo">
+          <a
+            href="https://www.linkedin.com/in/amy-barnhill-90a4a121a/"
+            target="_blank"
+          >
+            <svg
+              enable-background="new 0 0 32 32"
+              height="32px"
+              id="Layer_1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <circle
+                  clip-rule="evenodd"
+                  cx="16"
+                  cy="16"
+                  fill="#007BB5"
+                  fill-rule="evenodd"
+                  r="16"
+                />
+                <g>
+                  <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                  <path
+                    d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                    fill="#FFFFFF"
+                  />
+                  <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                </g>
+              </g>
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>Copyright 2023 Amy Barnhill</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
