@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amy Barnhill UX/UI Designer</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f91976b93a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo">Amy Barnhill</a>
+          <nav>
+            <ul class="nav">
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#contact" class="button" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!--start entire section>-->
+        <div>
+          <!--start container-->
+          <h1>TrueCoach</h1>
+          <div class="columns">
+            <!--start row for column-->
+            <div>
+              <h4>
+                App redesign concept of a fitness tracking app for trainers
+              </h4>
+              <div class="column">
+                <ul>
+                  <li>Scope: one month</li>
+                  <li>Role: UX/UI Designer, UX Researcher</li>
+                  <li>Tools: Figma</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <div class="truecoachmockup">
+                <picture>
+                  <source
+                    srcset="img/2x_sm/mockup_new_sm.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/2x_lrg/mockup_new_lrg.jpg"
+                    alt="Truecoach Mockup"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <!--end row for columns-->
+        </div>
+        <!--end container-->
+      </div>
+      <!--end entire section  block-->
+      <h1>Process</h1>
+      <div class="container">
+        <ul class="vela-nav">
+          <li><a href="#Overview" class="extralink">Overview</a></li>
+          <li><a href="#research" class="extralink">Research</a></li>
+          <li><a href="#wireframes" class="extralink">Wireframes</a></li>
+          <li>
+            <a href="#usabilitytesting" class="extralink">Usability Testing</a>
+          </li>
+          <li><a href="#solution" class="extralink">Solution</a></li>
+        </ul>
+      </div>
+      <h1 id="overview">Overview</h1>
+      <div class="container">
+        <h2>Overview</h2>
+        <p>
+          Truecoach is a software platform designed to facilitate seamless
+          communication between fitness coaches and their clients, while also
+          enabling efficient progress tracking and workout management. The
+          platform offers distinct functionalities for both coaches and clients.
+          Some of its key features include: 
+          <ul>
+            <li>
+                Messaging: Coaches can easily communicate with their clients through the app, fostering constant support and guidance.  
+            </li>
+            <li>
+                Progress Tracking: The software allows for comprehensive monitoring of clients' progress, helping coaches make data-driven decisions.  
+            </li>
+            <li>
+                Video Uploads: Clients can upload videos showcasing their workout results, which enhances feedback and analysis from their coaches.  
+            </li>
+            <li>
+                Workout Results Recording: Clients can effortlessly log their workout results within the app, simplifying the process of progress documentation. 
+            </li>
+
+          </ul>
+          
+        </p>
+        <h3>Goal of this Redesign</h3>
+        <p>
+            The goal of this redesign is to evaluate the client side of the Truecoach mobile app, and use design thinking to take advantage of any additional opportunities, and address any usability issues.
+        </p>
+        <h3>Problem Statement</h3>
+        <p>
+        Fitness enthusiasts need a way to accurately track their workouts each week, so they may accurately measure progress over time. 
+        </p>
+      </div>
+
+      <h1 id="research">Research</h1>
+      <div class="container">
+        <ul class="vela-nav">
+          <li><a href="#Heuristic Evaluation" class="extralink">Heuristic Evaluation</a></li>
+          <li><a href="#Competitive Analysis" class="extralink">Competitive Analysis</a></li>
+          <li><a href="#User Survey" class="extralink">User Survey</a></li>
+          <li><a href="#Research Summary" class="extralink">Research Summary</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h2>Heuristic Evaluation</h2>
+        <p>I conducted a heuristic evaluation of Truecoach using Nielsen Norman's 10 Usability Heuristics.</p>
+        <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic1_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic1_lrg.jpg"
+                alt="heuristic 1"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic2_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic2_lrg.jpg"
+                alt="heuristic 2"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic3_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic3_lrg.jpg"
+                alt="heuristic 3"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic6_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic6_lrg.jpg"
+                alt="heuristic 6"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic7_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic7_lrg.jpg"
+                alt="heuristic 7"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/heuristic9_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/heuristic9_lrg.jpg"
+                alt="heuristic 9"
+              />
+            </picture>
+          </div>
+        <h2 id="Competitive Analysis">Competitive Analysis</h2>
+        <p>
+            I evaluated two competitors to Truecoach: Trainerize and Everfit. The goal of this competitive analysis was to understand the strengths and weaknesses of each competitor to better identify what opportunities might exist for Truecoach. 
+          </p>
+          <h3>
+            UX Features Analysis
+        </h3>
+        <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/features_1_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/features_1_lrg.jpg"
+                alt="truecoach swot profile"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/features_2_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/trackers_2_lrg.jpg"
+                alt="trackers continued"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/trackers_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/trackers_lrg.jpg"
+                alt="trackers"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/tracker_2_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/trackers_2_lrg.jpg"
+                alt="truecoach swot profile"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/integrations_sm.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/integrations_lrg.jpg"
+                alt="integrations"
+              />
+            </picture>
+          </div>
+        <h3>
+            SWOT Profile
+        </h3>
+        <div>
+            <picture>
+              <source
+                srcset="img/1x_sm/swot_sm_1x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/1x_lrg/swot_lg_1x.jpg"
+                alt="truecoach swot profile"
+              />
+            </picture>
+          </div>
+        <h2 id="User Survey">User Survey</h2>
+        <p>
+            I conducted a survey with four fitness enthusiasts who regularly workout and track their results, and who been coached in the past or presently by a trainer. I asked the following questions: 
+            <ul> What motivated you to seek the assistance of a coach during your fitness journey?
+            </ul>
+            <p>
+                <ul>
+                    <li>"I couldn't find the motivation to achieve my goals alone."</li>
+                    <li>"I felt like I could use guidance and stability in my training. I also wanted to make sure that my workouts would match what my goals were."</li>
+                    <li>"When I got divorced I gained a lot of weight."</li>
+                    <li>"I wanted to change specific aspects of my physique."</li>
+                </ul>
+            </p>
+            <p>
+                <ul> What is your reason for tracking your workout results?
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>"To show that I have made improvements and to target my goals."</li>
+                    <li>"For me, I don’t only want to feel stronger but I like to be able to track my progress over time. It helps me feel organized while working out as well."</li>
+                    <li>"So I can see my progression."</li>
+                    <li>"To ensure I am progressively overloading."</li>
+                </ul>
+            </p>
+        </p>
+        <h2 id="Research Summary">Research Summary</h2>
+        <p>in progress</p>
+      </div>
+<div class="container">
+    <h1 id="wireframes">Wireframes</h1>
+    <p>Based on the research I collected, I began brainstorming and sketching some ideas. The result is a redesigned dashboard, the process to add workout results was redesigned, and I created a new way for users to view their past workout results for specific movements. </p>
+    <h3>Low Fidelity Sketches</h3>
+    <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/sketch1_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/sketch1_lrg.jpg"
+            alt="sketch 1"
+          />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/sketch2_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/sketch2_lrg.jpg"
+            alt="sketch 2"
+          />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/sketch3_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/sketch3_lrg.jpg"
+            alt="sketch 3"
+          />
+        </picture>
+      </div>
+      <h3>Mid Fidelity Wireframes</h3>
+      <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/wireframe1_mid_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/wireframe1_mid_lrg.jpg"
+            alt="mid fidelity wireframe 1"
+          />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/wireframe2_mid_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/wireframe2_mid_lrg.jpg"
+            alt="mid fidelity wireframe 2"
+          />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="img/1x_sm/wireframe3_mid_sm.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/1x_lrg/wireframe3_mid_lrg.jpg"
+            alt=",id fidelity wireframe 3"
+          />
+        </picture>
+      </div>
+      <h3>High Fidelity Wireframes</h3>
+      <p>Currently in progress, please check back for updates!</p>
+      <div class="container1">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdUbw1MSFIyxLnwv2LW9MGr%2Ftruecoach-redesign-playground%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dzx8ayezbmyak3rgP-1" allowfullscreen></iframe>
+      </div>
+</div>
+    <div class="container">
+        <h1 id="usabilitytesting">Usability Testing</h1>
+      <p>In progress, please check back for updates!</p>
+      </div>
+       
+      <div>
+        <h1 id="solution">Solution</h1>
+      </div>
+      
+      <div class="container">
+        <p>In progress, please check back for updates!</p>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>
+          If you like my work and would like to chat, please feel free to reach
+          out anytime
+        </p>
+        <div>
+          <a href="mailto:itsamybarnhill@gmail.com" class="button contact"
+            >Email Me</a
+          >
+        </div>
+        <div class="social-logo">
+          <a
+            href="https://www.linkedin.com/in/amy-barnhill-90a4a121a/"
+            target="_blank"
+          >
+            <svg
+              enable-background="new 0 0 32 32"
+              height="32px"
+              id="Layer_1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <circle
+                  clip-rule="evenodd"
+                  cx="16"
+                  cy="16"
+                  fill="#007BB5"
+                  fill-rule="evenodd"
+                  r="16"
+                />
+                <g>
+                  <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                  <path
+                    d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                    fill="#FFFFFF"
+                  />
+                  <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                </g>
+              </g>
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>Copyright 2023 Amy Barnhill</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+/*Universal Selector*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #ffffff;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #130025;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 300;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #e1e1e5;
+  text-decoration: none; /* No underlining */
+}
+a:hover a:focus {
+  color: #130025;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited {
+  /* visited link */
+  color: 130025;
+}
+a:active {
+  /* selected link */
+  color: #130025;
+}
+
+.extralink {
+  color: #130025;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  width: fit-content;
+  text-align: center;
+  background-color: #f28e23;
+  color: #130025; /* needed to override the default link color */
+  font-weight: 300;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 6px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+/*This is for the email me button*/
+.button.contact {
+  background-color: transparent;
+  color: #f28e23;
+  text-transform: lowercase;
+  border: 2px solid #f28e23;
+  padding-right: 12px;
+  border-radius: 12px;
+}
+.button.contact:hover {
+  background-color: #f28e23;
+  color: #ffffff;
+}
+
+#contact {
+  background-image: linear-gradient(89.33deg, #612f9b 51.4%, #31035e 119.97%);
+  color: #e1e1e5;
+  text-align: center;
+  padding: 10px 0;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+#header {
+  background-image: linear-gradient(89.33deg, #612f9b 51.4%, #31035e 119.97%);
+  color: #e1e1e5;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-container {
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logo > a {
+  padding: 0 15px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+/* Layout Styling*/
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* Navigation */
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+
+.nav > li > a {
+  padding: 0 22px;
+  text-transform: lowercase;
+}
+
+.nav > li > a:hover a:focus {
+  color: #130025;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+.nav > li > a:visited {
+  /* visited link */
+  color: 130025;
+}
+
+.nav > li > a:active {
+  /* selected link */
+  color: #ffffff;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+main {
+  padding-top: 133px;
+}
+
+/* Media Queries*/
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  #header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navtoggle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav {
+    width: auto;
+    float: right;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px;
+  }
+
+  [class*='col-'] {
+    float: left;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  .nav > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .nav {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  [class*='col-'] {
+    float: left;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-back {
+  animation: 29s cloud-move-reverse infinite alternate linear;
+}
+
+.about-h1 {
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flexbox;
+  justify-content: center;
+}
+
+.vela-nav {
+  list-style-type: none;
+}
+
+.social-logo {
+  padding-left: 0;
+  padding-top: 15px;
+}
+
+.about-image {
+  display: block;
+  margin: auto;
+  max-height: 132px;
+  max-width: 132px;
+}
+
+.velamockup {
+  max-height: 500px;
+  max-width: 250px;
+  padding-left: 35px;
+  padding-top: 35px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}

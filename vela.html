@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amy Barnhill UX/UI Designer</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f91976b93a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo">Amy Barnhill</a>
+          <nav>
+            <ul class="nav">
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#contact" class="button" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!--start entire section>-->
+        <div>
+          <!--start container-->
+          <h1>Vela</h1>
+          <div class="columns">
+            <!--start row for column-->
+            <div>
+              <h4>
+                A mobile weather application built for watersport enthusiasts
+              </h4>
+              <div class="column">
+                <ul>
+                  <li>Scope: 12 months</li>
+                  <li>Role: UX/UI Designer</li>
+                  <li>Tools: Figma</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <div class="velamockup">
+                <picture>
+                  <source
+                    srcset="img/2x_sm/vela_mockup.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img src="img/2x_sm/vela_mockup.jpg" alt="Vela Mockup" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <!--end row for columns-->
+        </div>
+        <!--end container-->
+      </div>
+      <!--end entire section  block-->
+      <h1>Process</h1>
+      <div class="container">
+        <ul class="vela-nav">
+          <li><a href="#background" class="extralink">Background</a></li>
+          <li><a href="#research" class="extralink">Research</a></li>
+          <li><a href="#analyze" class="extralink">Analyze</a></li>
+          <li><a href="#wireframes" class="extralink">Wireframes</a></li>
+          <li>
+            <a href="#usabilitytesting" class="extralink">Usability Testing</a>
+          </li>
+          <li>
+            <a href="#refiningthedesign" class="extralink"
+              >Refining the Design</a
+            >
+          </li>
+          <li><a href="#solution" class="extralink">Solution</a></li>
+        </ul>
+      </div>
+      <h1 id="background">Background</h1>
+      <div class="container">
+        <h2>Context</h2>
+        <p>
+          Water sport enthusiasts such as surfers, kayakers, and snorkelers want
+          their activities on the water to be relaxing and fun, not stressful.
+          To avoid any mishaps, it’s important to check the winds, waves and
+          weather conditions before heading out. This can help us avoid hazards
+          and be fully prepared for a day full of surfing, diving, or sailing.
+        </p>
+        <h3>Problem</h3>
+        <p>
+          Weather apps do exist for water sport enthusiasts, however what is
+          currently available doesn’t do a great job of displaying complicated
+          weather data in an accessible, easy to understand manner.
+        </p>
+        <h3>Hypothesis</h3>
+        <p>
+          Watersport enthusiasts such as sailors, surfers, and divers need a way
+          to receive accurate weather data presented in an easy to comprehend
+          and visually attractive way, so that they can make informed decisions
+          about participating in water sports.
+        </p>
+        <h3>Goal</h3>
+        <p>
+          Create a product that offers current conditions information, graphs,
+          and future forecasts all beautifully displayed and easy to read at a
+          glance, geared specifically for the needs of water sport enthusiasts.
+        </p>
+      </div>
+
+      <h1 id="research">Research</h1>
+
+      <div class="container">
+        <h2>Competitive Analysis</h2>
+        <p>
+          As part of my research, it was important to understand competitors in
+          the same space were doing well, and discover what opportunities might
+          exist for my project. I selected two apps with similar features,
+          Waterspeed and Windy. To analyze, I created a marketing profile for
+          each competitor, prepared a SWOT analysis, and performed a UX and
+          features analysis of each competitor.
+        </p>
+        <div>
+          <picture>
+            <source
+              srcset="img/1x_sm/comp_analysis_sm.png"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/comp_analysis_lrg.png"
+              alt="competitive
+            analysis"
+            />
+          </picture>
+        </div>
+        <h2>User Interviews</h2>
+        <p>
+          I conducted interviews with three individuals sourced from my personal
+          network. The interviews were conducted remotely over Zoom.
+        </p>
+        <h3>Questions</h3>
+        <ul>
+          <li>
+            How much time do you normally spend checking a mobile weather app?
+          </li>
+          <li>What parts of a weather app do you use the most?</li>
+          <li>What device would you normally use when checking the weather?</li>
+          <li>Tell me about a time you were frustrated with a weather app?</li>
+          <li>What is your goal when you are checking a weather report?</li>
+          <li>How much time do you spend on water sports per week?</li>
+          <li>
+            Tell me about a great experience you had while doing water sports
+          </li>
+          <li>
+            Tell me about a bad experience you had while doing water sports
+          </li>
+        </ul>
+        <h3>User Quotes</h3>
+        <ul>
+          <li>
+            “It’s always an awesome feeling when I wake up in the morning, check
+            the surf report and see that the conditions are going to be just
+            right.” -User Interviewee
+          </li>
+          <li>
+            “Knowing the shorebreak really well is so important for safety,
+            especially where I live. Staying aware of the ocean conditions is
+            super important, they change fast” -User Interviewee
+          </li>
+          <li>
+            “I check weather about five minutes at a time, usually once in the
+            morning, and throughout the day, to see what’s happening on radar” -
+            User Interviewee
+          </li>
+        </ul>
+        <h3>Interesting Discoveries</h3>
+        <ul>
+          <li>
+            Users reported they are looking at specific conditions reports the
+            most, including wave swell size, tide report, and wind direction.
+            Other specific reports mentioned were temperature, live radar, the
+            uv index, and time of sunrise/sunset.
+          </li>
+          <li>
+            Overall, the users I interviewed reported checking their mobile
+            weather app of choice at least once per day, in approximately five
+            minute increments. Interviewees reported that they check the weather
+            more than once on days when they are planning to do water sports,
+            usually closer to 2-3 times per day.
+          </li>
+          <li>
+            Users reported they generally use a mobile phone to check the
+            weather, occasionally a tablet or iPad, and even more occasionally a
+            desktop. Users also reported they do generally bring their phone or
+            device with them, but not necessarily while actively participating
+            in water sports. One interviewee reported they sometimes use a
+            waterproof case with lanyard while paddle boarding
+          </li>
+          <li>
+            Interviewees reported that a good day on the water consisted of
+            ideal weather conditions, not forgetting anything they needed for
+            the day like snacks/sunscreen, avoiding overcrowded beaches, and
+            avoiding jellyfish.
+          </li>
+          <li>
+            Interviewees reported a bad day or a “no go” day on the water
+            consisted of going out to surf and not catching any waves,
+            overcrowding at beaches/shore breaks, and dangerous conditions such
+            as rip currents or sharks.
+          </li>
+        </ul>
+      </div>
+
+      <h1 id="analyze">Analyze</h1>
+
+      <div class="container">
+        <h2>User Personas</h2>
+        <p>
+          I developed two user personas based on the data I had gathered.
+          Raymond, a 28 year old realtor who has been surfing all his life, and
+          Shelby, a 29 year old teacher who has just recently taken up paddle
+          boarding as a hobby.
+        </p>
+        <div>
+          <picture>
+            <source
+              srcset="img/1x_sm/persona_raymond_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/persona_raymond_lrg.jpg"
+              alt="raymond user
+            persona"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/1x_sm/shelby_persona_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/shelby_persona_lrg.jpg"
+              alt="shelby user
+            persona"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="container">
+        <h2>User Journey Maps</h2>
+        <p>
+          I developed two user personas based on the data I had gathered.
+          Raymond, a 28 year old realtor who has been surfing all his life, and
+          Shelby, a 29 year old teacher who has just recently taken up paddle
+          boarding as a hobby.
+        </p>
+        <div>
+          <picture>
+            <source
+              srcset="img/1x_sm/raymond_userjourney_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/raymond_userjourney_lrg.jpg"
+              alt="raymond user
+            journey map"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/1x_sm/shelby_userjourney_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/shelby_userjourney_lrg.jpg"
+              alt="shelby user
+            journey map"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <h1 id="wireframes">Wireframes</h1>
+      <div class="container">
+        <h2>Mid Fi Wireframes</h2>
+        <p>
+          I developed mid fidelity wireframes for the three major features of
+          the mobile app, which are Community, Favorites and Weather Reports.
+        </p>
+        <div>
+          <picture>
+            <source
+              srcset="img/1x_sm/conditions_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/conditions_lrg.jpg"
+              alt="conditions wireframes"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/1x_sm/community_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/community_lrg.jpg"
+              alt="community wireframes"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/1x_sm/favorites_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/favorites_lrg.jpg"
+              alt="favorites wireframes"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <h1 id="usabilitytesting">Usability Testing</h1>
+      <div class="container">
+        <p>
+          Usability testing was conducted remotely with six participants over
+          the span of the week. During the test we had the participants interact
+          with the Prototype and complete a series of short tasks. Our test
+          objectives were to determine how quickly users were able to understand
+          what the features of the app do, and also we wanted to observe how
+          users would navigate through the app and if they're able to find what
+          they needed quickly and easily through the navigation.
+        </p>
+        <a
+          class="extralink"
+          href="https://docs.google.com/document/d/1zVSOZwcpsKbLuqXzgImDGqLRLQLHD7mGikaX97S1R3E/edit"
+          target="_blank"
+          >View full test plan and script</a
+        >
+        <h2>Test Results</h2>
+        <p>
+          The top three usability issues that we discovered during testing were:
+        </p>
+        <ul>
+          <li>
+            Users were confused on where to find the ocean swell forecast. Users
+            anticipated that ocean swell would be located under the “water”
+            bucket, when in fact the data was placed under the “Air” bucket, as
+            swell is caused by wind.
+          </li>
+          <li>
+            Users were confused by the search function when asked to set their
+            location in the app. This was because the search function prototype
+            did not indicate clearly where the user could type.
+          </li>
+          <li>
+            When users created a weather alert, there was confusion because
+            there was no clear indiction when the user had completed the task.
+            In this instance, the toggle that indicated an alert had been
+            created did not move to the “on” position.
+          </li>
+        </ul>
+      </div>
+      <h1 id="refiningthedesign">Refining the Design</h1>
+      <div class="container">
+        <p>
+          After usability testing was completed, I sat down with the high
+          fidelity wireframes to further refine the design. I incorporated the
+          fixes suggested by testing, including changing the location of certain
+          data, and making some changes to the search function to improve
+          usability. I also implemented an 8 point grid system, added a color
+          scheme, and adapted the interface to include Material Design
+          Guidelines. An accessibility audit was also performed to make sure the
+          design conformed to A guidelines at a minimum. Finally, I created a
+          Style Guide in preparation for handoff to developers.
+        </p>
+        <div>
+          <picture>
+            <source
+              srcset="img/1x_sm/styleguide_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/styleguide_lrg.jpg"
+              alt="Vela Styleguide Color"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/1x_sm/typography_sm.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/1x_lrg/typography_lrg.jpg"
+              alt="Vela Styleguide
+            Typography"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <h1 id="solution">Solutions</h1>
+
+      <div class="container">
+        <h2>Hi Fi Prototype</h2>
+      </div>
+      <div class="container1">
+        <iframe
+          class="responsive-iframe"
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="800"
+          height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOtLGeGZjjZkCjwHMCSZ2LV%2FVela---App-Playground%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D52-5088%26viewport%3D1520%252C1388%252C0.22%26scaling%3Dscale-down%26starting-point-node-id%3D52%253A5088%26show-proto-sidebar%3D1"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="container">
+        <h2>Challenges and Lessons Learned</h2>
+        <h3>Research - Finding the right people to interview</h3>
+        <p>
+          During the research phase of Vela it was challenging it was difficult
+          to find individuals in my personal network who had water sports
+          experience and matched my criteria, and it was also sometimes felt
+          challenging to ask for the interview if I had not spoken with the
+          contact in a long time. There were also some scheduling challenges
+          with individuals who lived in different time zones. The lesson learned
+          here is to over budget time for research to allow for any
+          cancellations or scheduling mishaps. I overcame the challenge of
+          sourcing individuals with persistence and not allowing myself to
+          become discouraged if an interview did not work out. I was careful to
+          follow up when setting up the interview and carefully explained the
+          process to ensure the participant’s comfort.
+        </p>
+        <h3>Design - Receiving Feedback</h3>
+        <p>
+          While designing the first concept of the design, I received some
+          feedback that the navigation I had created may not be the easiest
+          thing for a developer to build. Because of this, I had to rethink and
+          come up with a new concept. The lesson learned for me here was that it
+          is 1) Design is a constant work in progress and it’s important not to
+          get attached to any one idea and 2) UX Design is very similar to
+          architecture. Creating beautiful and innovative wireframes is great,
+          but ultimately functionality is most important and someone has to be
+          able to build the design.
+        </p>
+        <h3>Testing - Asking better questions</h3>
+        <p>
+          An additional finding from testing the prototype was how to write
+          better usability testing questions. For instance, during testing
+          participants had to ask for a particular question to be repeated
+          multiple times. I realized that the question I wrote was too long,
+          involved, and wordy. Participants could not remember what the question
+          was asking them to do as they tried to complete the task. The lesson
+          learned here is to remember that sometimes a question seems clear to
+          the author but not so clear to someone hearing it for the first time.
+          I learned to write better questions by reading them out loud, and by
+          running the questions by friends and family to check for clarity.
+        </p>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>
+          If you like my work and would like to chat, please feel free to reach
+          out anytime
+        </p>
+        <div>
+          <a href="mailto:itsamybarnhill@gmail.com" class="button contact"
+            >Email Me</a
+          >
+        </div>
+        <div class="social-logo">
+          <a
+            href="https://www.linkedin.com/in/amy-barnhill-90a4a121a/"
+            target="_blank"
+          >
+            <svg
+              enable-background="new 0 0 32 32"
+              height="32px"
+              id="Layer_1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <circle
+                  clip-rule="evenodd"
+                  cx="16"
+                  cy="16"
+                  fill="#007BB5"
+                  fill-rule="evenodd"
+                  r="16"
+                />
+                <g>
+                  <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                  <path
+                    d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                    fill="#FFFFFF"
+                  />
+                  <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                </g>
+              </g>
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>Copyright 2023 Amy Barnhill</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
