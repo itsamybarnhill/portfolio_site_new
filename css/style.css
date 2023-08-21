@@ -83,6 +83,13 @@ a:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+/*This is for the header button*/
+.button.header {
+  background-color: transparent;
+  color: #19171d;
+  text-transform: lowercase;
+  border: 2px solid #ffffff;
+}
 /*This is for the email me button*/
 .button.contact {
   background-color: transparent;
