@@ -85,7 +85,7 @@ a:active {
 }
 /*This is for the header button*/
 .button.header {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #e1e1e5;
   text-transform: lowercase;
   border: 2px solid #ffffff;
