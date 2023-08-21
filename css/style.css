@@ -93,9 +93,9 @@ a:active {
 /*This is for the email me button*/
 .button.contact {
   background-color: transparent;
-  color: #f28e23;
+  color: #e1e1e5;
   text-transform: lowercase;
-  border: 2px solid #f28e23;
+  border: 2px solid #ffffff;
   padding-right: 12px;
   border-radius: 12px;
 }
