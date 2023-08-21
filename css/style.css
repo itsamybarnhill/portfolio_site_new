@@ -68,7 +68,7 @@ a:active {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   width: fit-content;
   text-align: center;
-  background-color: #f28e23;
+  background-color: #19171d;
   color: #130025; /* needed to override the default link color */
   font-weight: 300;
   padding-top: 6px;
@@ -110,7 +110,8 @@ a:active {
 }
 
 #header {
-  background-image: linear-gradient(89.33deg, #612f9b 51.4%, #31035e 119.97%);
+  background-color: #19171d;
+  background-image: linear-gradient(180deg, #050718 80%);
   color: #e1e1e5;
   padding: 10px 0;
   position: fixed;
