@@ -98,7 +98,8 @@ a:active {
 }
 
 #contact {
-  background-image: linear-gradient(89.33deg, #612f9b 51.4%, #31035e 119.97%);
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
   color: #e1e1e5;
   text-align: center;
   padding: 10px 0;
