@@ -70,6 +70,7 @@ a:active {
   text-align: center;
   background-color: #19171d;
   color: #e1e1e5; /* needed to override the default link color */
+  border: 2px solid #ffffff;
   font-weight: 300;
   padding-top: 6px;
   padding-bottom: 6px;
